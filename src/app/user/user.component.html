@@ -1,0 +1,26 @@
+<div *ngIf="showHead" class="col-md-6">
+<h2> Employee Details</h2>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th >Id</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Email</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td  contenteditable="false">{{user.id}}</td>
+    <td  contenteditable="false">{{user.firstName}}</td>
+    <td  contenteditable="false">{{user.lastName}}</td>
+    <td  contenteditable="false">{{user.email}}</td>
+    <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete User</button></td>  
+  </tr>
+  </tbody>
+</table>
+
+
+</div>

@@ -1,0 +1,22 @@
+<div *ngIf="showHead" class="container-fluid">
+<div class="col-md-offset-1">
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a  data-toggle="modal" data-target="#logoutModal" routerLink="/home" >LogOut</a>
+        </li>
+      </ul>
+ <h1 align="center"> <marquee>
+    Welcome to {{title}}!
+  </marquee></h1>
+</div>
+
+<a style="margin-left:10px" routerLink="/add">Add Employee</a>&nbsp;
+<a routerLink="/users">Show All</a>&nbsp;
+<a style="margin-left:10px" routerLink="/update">Update Employee</a>
+
+
+
+<br/>
+
+</div>
+
